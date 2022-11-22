@@ -1,10 +1,10 @@
-package com.PL.PremierLeague;
+package com.toubson20.premierleague;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PremierLeagueApplicationTests {
+class PremierleagueApplicationTests {
 
 	@Test
 	void contextLoads() {
