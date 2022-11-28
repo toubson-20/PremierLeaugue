@@ -2,6 +2,7 @@ package com.toubson20.premierleague.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.toubson20.premierleague.model.Equipe;
@@ -15,6 +16,7 @@ import lombok.Data;
 //@AllArgsConstructor
 public class EquipeService  {
 	
+	@Autowired
 	private EquipeRepository equipeRepository;
 
 	public Iterable<Equipe> getEquipe() {
