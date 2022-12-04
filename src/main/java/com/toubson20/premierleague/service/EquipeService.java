@@ -11,9 +11,8 @@ import com.toubson20.premierleague.repository.EquipeRepository;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-@Data
 @Service
-//@AllArgsConstructor
+@AllArgsConstructor
 public class EquipeService  {
 	
 	@Autowired
