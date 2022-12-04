@@ -10,8 +10,8 @@ import com.toubson20.premierleague.model.Joueurs;
 @Repository
 public interface JoueursRepository extends CrudRepository<Joueurs, Long> {
 
-	@Query(value = "SELECT NOM_JOUEUR, NUM_MAILLOT, POSTE FROM JOUEURS INNER JOIN EQUIPE \r\n"
-			+ "ON JOUEURS.ID_EQUIPE = EQUIPE.ID\r\n"
-			+ "WHERE NOM_EQUIPE = :nomEquipe", nativeQuery = true)
+	@Query(value = "SELECT * FROM JOUEURS\n" +
+			"INNER JOIN EQUIPE ON JOUEURS.ID_EQUIPE = EQUIPE.ID \n" +
+			"WHERE EQUIPE.NOM_EQUIPE = :nomEquipe", nativeQuery = true)
 	public Iterable<Joueurs> getJoueursByEquipe(@Param("nomEquipe") String nom);
 }
