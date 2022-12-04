@@ -15,6 +15,7 @@ import lombok.AllArgsConstructor;
 
 @RestController 
 @RequestMapping("/equipe")
+@AllArgsConstructor
 public class EquipeController {//exposer une resource
 
 	@Autowired //injection
